@@ -1,8 +1,6 @@
-# Spark18 Assignment
+# Spark18_Assignment
 
 This project was build using React.
-
-
 
 ## Getting Started
 
