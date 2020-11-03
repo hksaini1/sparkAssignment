@@ -5,7 +5,7 @@ import {
 
 const initialState = {
     webDisplay: [],
-    web : [{value:'HTML',checked:false,key:0,id:1},{value:'CSS',checked:false,key:1,id:1},{value:'JavaScript',checked:false,key:2,id:1},{value:'Nodejs',checked:false,key:3,id:1}]
+    web : [{value:'Deveedaas Nandi',checked:false,key:0,id:1},{value:'Obasey Chidy',checked:false,key:1,id:1},{value:'Xenie Dolezelova',checked:false,key:2,id:1},{value:'Ezequiel Dengra',checked:false,key:3,id:1}]
 }
 
 export default function auth(state = initialState, action){

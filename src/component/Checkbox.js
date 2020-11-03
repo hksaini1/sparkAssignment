@@ -8,6 +8,7 @@ class Checkbox extends Component {
             <label className="mylable">
                 <input type="checkbox" value= {items.value} id= {items.id}  checked={items.checked} onClick={toggleCheckboxChange} className="myCheckbox"/>
                 {items.value}
+                <span class="checkmark"></span>
             </label>
             
         );

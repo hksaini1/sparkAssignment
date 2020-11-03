@@ -5,7 +5,7 @@ import {
 
 const initialState = {
     dbDisplay: [],
-    db: [{value:'SQL',checked:false,key:0,id:2},{value:'MongoDB',checked:false,key:1,id:2}]
+    db: [{value:'Aaron Almaraz',checked:false,key:0,id:2},{value:'Jelena Denisova',checked:false,key:1,id:2}]
 }
 
 export default function auth(state = initialState, action){

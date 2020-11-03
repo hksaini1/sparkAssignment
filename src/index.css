@@ -7,7 +7,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #2c583c; */
-  background-color: #6161a4;
+  background:radial-gradient(165px circle at 1078px 180px, #a439ff 57%, transparent 51%),
+  radial-gradient(268px circle at 1322px 602px, #853fc3 50%, transparent 46%), 
+   radial-gradient(502px circle at 133px 531px, #8533cc 50%, transparent 50.4%);
+  
+  background-color: #8c16f6;
+ 
+  /* background: linear-gradient(110deg, #7b28c2 60%,  #8c16f6 60%); */
 }
 
 code {
@@ -19,30 +25,45 @@ code {
   padding: 10px;
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
+  margin-top: 80px;
+  padding-bottom: 50px;
 }
 .container{
   /* background-color:  #cfc9e0; */
   background-color: white;
   width: 30vw;
-  height: 80vh;
+  height: 70vh;
   padding: 10px;
-  margin-left: 200px;
+  margin-left: 250px;
   border-radius: 8px;
 }
-.mylable{
+.mylable {
   margin-left: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  display: block;
+  
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
+
 .myCheckbox{
-  margin-right: 3px;
+  margin-right: 14px;
 }
 .mycontainer{
   /* background-color: #cfc9e0; */
   background-color: white;
   width: 30vw;
-  min-height: 80vh;
+  min-height: 70vh;
   height: auto;
-  margin-right: 200px;
+  margin-right: 250px;
   padding: 10px;
   border-radius: 8px;
 }
@@ -59,10 +80,14 @@ label{
   flex-direction: row;
   justify-content: space-between;
   /* background-color: #fbfcfe; */
-  background-color: #d2c8eec9;
-  width: 20vw;
-  padding: 5px;
+  background-color: #f1f1f1c9;
+  width: 25vw;
+  padding: 8px;
+  border-radius: 3%;
+  margin-top: 16px;
   margin-bottom: 10px;
+  color: #6e6c6c;
+  font-size: 14px;
 }
 .name{
   display: flex;
@@ -83,15 +108,102 @@ label{
   /* color: #cd3700; */
   color: black;
   font-size: 20px;
-  font-weight: bolder;
+  font-weight: 600;
   margin-bottom: 2px;
 }
 .logo-color{
-  color: #7a7ad9 !important;
+  color: #9113ff !important;
   margin-left: 200px !important;
-  font-weight: bolder !important;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 16px;
+
 }
 .display-nodata{
   text-align: center;
   margin-top: 200px;
+}
+a.nav-link{
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+
+}
+.bg-light{
+background-color: #fff !important;
+}
+button.btn.btn-outline-default.my-2.my-sm-0.mx-2{
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  background: #ffffff;
+  border: 1px solid #e4e7e9;
+}
+h2.mylable {
+  font-size: 19px;
+  margin-left: -21px;
+}
+label.mylable {
+  color: #6e6c6c;
+  font-size: 14px;
+}
+.display-container ul{
+  margin-left: -20px;
+}
+
+input[type=checkbox]:checked:before{
+  background-color:#8f13fd;
+  }
+
+
+
+
+
+
+
+  .checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    height: 17px;
+    width: 17px;
+    border: 1px solid gray;
+  }
+  
+ 
+  /* When the checkbox is checked, add a blue background */
+   input:checked ~ .checkmark {
+    background-color: #8f13fd !important;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    
+  }
+  /* Hide the browser's default checkbox */
+.myCheckbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }

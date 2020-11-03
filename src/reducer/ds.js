@@ -5,7 +5,7 @@ import {
 
 const initialState = {
     dsDisplay: [],
-    ds : [{value:'Array',checked:false, key:0,id:0},{value:'LinkList',checked:false,key:1,id:0},{value:'HashMap',checked:false,key:2,id:0},{value:'Stack',checked:false,key:3,id:0}]
+    ds : [{value:'Aasiya Jayavant',checked:false, key:0,id:0},{value:'Luvleen Lawrence',checked:false,key:1,id:0},{value:'Rey Mibourne',checked:false,key:2,id:0},{value:'Cayla Brister',checked:false,key:3,id:0}]
 }
 export default function auth(state = initialState, action){
     switch(action.type){
